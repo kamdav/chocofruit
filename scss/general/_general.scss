@@ -1,0 +1,304 @@
+// Foundation by ZURB
+// Customisation by Takomo
+// © Takomo
+
+// Mixins
+@mixin transition {
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+// Fonts
+/// Remember to find correct folder (../fonts/coolfont.eot) folder
+// @font-face {
+//     font-family: 'example-font';
+//     src: url('../fonts/example-font.eot');
+//     src: url('../fonts/example-font.eot') format('embedded-opentype'),
+//          url('../fonts/example-font.woff2') format('woff2'),
+//          url('../fonts/example-font.woff') format('woff'),
+//          url('../fonts/example-font.ttf') format('truetype'),
+//          url('../fonts/example-font.svg#example-font') format('svg');
+// }
+/// FONTS FOR THIS WEBSITE ARE IN _global.scss
+
+p {
+  color: #401410;
+  line-height: 2;
+}
+
+a {
+  color: #401410 !important;
+}
+
+.mouser {
+  font-family: 'Mouser', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #e9252c;
+
+  @media #{$small-only} {
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+
+  @media #{$medium-only} {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+
+  @media #{$large-up} {
+    margin-bottom: 45px;
+  }
+
+  @media all and (min-width: 600px) and (max-width: 928px) {
+    font-size: 14px;
+  }
+}
+
+.mouser-2 {
+  font-family: 'Mouser', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 52px;
+
+  @media #{$small-only} {
+    margin-top: -20px;
+    margin-bottom: -17px;
+    font-size: 31px;
+  }
+
+  @media #{$medium-only} {
+    margin-top: -15px;
+    margin-bottom: -20px;
+    font-size: 38px;
+  }
+
+  @media #{$large-up} {
+    margin-top: -15px;
+    margin-bottom: -25px;
+  }
+}
+
+.zaguatica-bold {
+  font-family: 'zaguaticaBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  margin-bottom: 28px;
+
+  @media #{$medium-only} {
+    font-size: 10px;
+  }
+
+  @media #{$small-only} {
+    margin-bottom: 20px;
+    font-size: 8px;
+  }
+}
+
+.zaguatica-bold-2 {
+  font-family: 'zaguaticaBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 10px;
+}
+
+.zaguatica-extra-bold {
+  font-family: 'zaguaticaExtraBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 13px;
+
+  @media #{$small-only} {
+    margin-top: 14px;
+    font-size: 7px;
+  }
+
+  @media #{$medium-only} {
+    font-size: 9px;
+  }
+
+  @media all and (min-width: 1020px) and (max-width: 1250px) {
+    font-size: 10px;
+  }
+
+  @media all and (min-width: 600px) and (max-width: 928px) {
+    margin-top: 8px;
+    font-size: 9px;
+  }
+
+  @media all and (max-width: 350px) {
+    font-size: 6px;
+  }
+
+  @media all and (max-width: 305px) {
+    font-size: 5px;
+  }
+}
+
+.zaguatica-extra-bold-2 {
+  font-family: 'zaguaticaExtraBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 13px;
+  color: #8ac443;
+
+  @media #{$small-only} {
+    font-size: 7px;
+  }
+
+  @media #{$medium-only} {
+    font-size: 10px;
+  }
+
+  @media all and (min-width: 1020px) and (max-width: 1250px) {
+    font-size: 10px;
+  }
+
+  @media all and (min-width: 600px) and (max-width: 928px) {
+    font-size: 9px;
+  }
+
+  @media all and (max-width: 305px) {
+    font-size: 6px;
+  }
+}
+
+.zaguatica-extra-bold-3 {
+  font-family: 'zaguaticaExtraBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  margin-top: 35px;
+
+  @media #{$small-only} {
+    font-size: 9px;
+  }
+
+  @media #{$medium-only} {
+    font-size: 12px;
+  }
+
+  @media all and (min-width: 641px) and (max-width: 730px) {
+    font-size: 10px;
+  }
+}
+
+.zaguatica-extra-bold-4 {
+  font-family: 'zaguaticaExtraBold', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+  font-size: 11px;
+  margin-top: 25px;
+}
+
+.zaguatica-bold-oblique {
+  font-family: 'zaguaticaBoldOblique', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+}
+
+.zaguatica-extra-bold-oblique {
+  font-family: 'zaguaticaExtraBoldOblique', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !important;
+}
+
+.arial {
+  font-size: 9px;
+  font-weight: 600;
+
+  @media #{$large-up} {
+    margin-top: 20px;
+  }
+
+  @media #{$medium-only} {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  @media #{$small-only} {
+    margin-top: 5px;
+    font-size: 6px;
+  }
+}
+
+.green {
+  color: #8ac443;
+}
+
+.border {
+  border: 2px solid #e9252c;
+  padding: 10px;
+
+  @media #{$small-only}, #{$medium-only} {
+    border: 1px solid #e9252c;
+  }
+}
+
+// Main style changes
+ul {
+  list-style-type: none;
+}
+
+/// Cover the background with an image
+// body {
+//   background: url(../img/backgroundimage.jpg) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+
+
+// Reusable styling
+/// Top
+.margin-top {
+  margin-top: 10px;
+}
+
+.margin-top-large {
+  margin-top: 20px;
+}
+
+.margin-top-extra-large {
+  margin-top: 80px;
+}
+
+.margin-top-small {
+  margin-top: 5px;
+}
+
+/// Bottom
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-large {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-small {
+  margin-bottom: 5px;
+}
+
+/// Right
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-right-large {
+  margin-right: 20px;
+}
+
+.margin-right-small {
+  margin-right: 5px;
+}
+
+/// Left
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-left-large {
+  margin-left: 20px;
+}
+
+.margin-left-small {
+  margin-left: 5px;
+}
+
+
+.show-for-tab-portrait {
+  @media (min-width: 58.063em) {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+// Foundation by ZURB
+// Customisation by Takomo
+// © Takomo
+
+
+// Social Icons General Styling
+
+/// For a centered social media icon list, use below (with div, not list)
+.social-list { 
+  display: inline;
+
+  a {
+    display: inline-block;
+    border-radius: 2px;
+    margin: 0 1px;
+  }
+}
+
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+
+  &:hover {
+    background-position: -32px 0px;
+    transition: 0.5s;
+  }
+
+  @media #{$small-only}, #{$medium-only} {
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.social-facebook {
+  background: url(../img/social-icons/social-fb-sprite.png) no-repeat;
+
+  @media #{$small-only}, #{$medium-only} {
+    background: url(../img/social-icons/social-fb-sprite-mob.png);
+    background-size: 64px 32px;
+  }
+}
+
+.social-linkedin {
+  background: url(../img/social-icons/social-li-sprite.png) no-repeat;
+
+  @media #{$small-only}, #{$medium-only} {
+    background: url(../img/social-icons/social-li-sprite-mob.png);
+    background-size: 64px 32px;
+  }
+}
+
+.social-twitter {
+  background: url(../img/social-icons/social-twit-sprite.png) no-repeat;
+
+  @media #{$small-only}, #{$medium-only} {
+    background: url(../img/social-icons/social-twit-sprite-mob.png);
+    background-size: 64px 32px;
+  }
+}
+
+.social-instagram {
+  background: url(../img/social-icons/social-insta-sprite.png) no-repeat;
+
+  @media #{$small-only}, #{$medium-only} {
+    background: url(../img/social-icons/social-insta-sprite-mob.png);
+    background-size: 64px 32px;
+  }
+}
+
+.social-youtube {
+  background: url(../img/social-icons/social-yt-sprite.png) no-repeat;
+
+  @media #{$small-only}, #{$medium-only} {
+    background: url(../img/social-icons/social-yt-sprite-mob.png);
+    background-size: 64px 32px;
+  }
+}
